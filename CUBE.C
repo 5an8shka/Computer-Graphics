@@ -8,7 +8,7 @@ int main(void)
 {
    /* request auto detection */
    int gdriver = DETECT, gmode, errorcode;
-   int left, top, right, bottom;
+
 
    /* initialize graphics and local variables */
    initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");
@@ -23,10 +23,7 @@ int main(void)
       exit(1); /* terminate with an error code */
    }
 
-   left = getmaxx() / 2 - 50;
-   top = getmaxy() / 2 - 50;
-   right = getmaxx() / 2 + 50;
-   bottom = getmaxy() / 2 + 50;
+  
 
    /* draw a rectangle */
    rectangle(100,100,400,300);
