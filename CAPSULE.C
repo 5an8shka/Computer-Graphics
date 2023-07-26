@@ -8,9 +8,7 @@ int main(void)
 {
     /* request auto detection */
    int gdriver = DETECT, gmode, errorcode;
-   int midx, midy;
-   int stangle = 45, endangle = 135;
-   int radius = 100;
+   
 
    /* initialize graphics and local
    variables */
@@ -28,9 +26,7 @@ int main(void)
       exit(1);    /* terminate with an error code */
    }
 
-   midx = getmaxx() / 2;
-   midy = getmaxy() / 2;
-   setcolor(getmaxcolor());
+  
 
    /* draw arc */
    arc(250,300,180,0,50);
