@@ -8,7 +8,7 @@ int main(void)
 {
    /* request auto detection */
    int gdriver = DETECT, gmode, errorcode;
-   int xmax, ymax;
+  
 
    /* initialize graphics and local variables */
    initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");
@@ -24,9 +24,7 @@ int main(void)
       exit(1);
    }
 
-   setcolor(getmaxcolor());
-   xmax = getmaxx();
-   ymax = getmaxy();
+ 
 
    /* draw a diagonal line */
    line(100,100,400,100);
